@@ -59,6 +59,7 @@
   - `pytest tests/test_specific_file.py::test_specific_case`
   - `ruff check path/to/file.py`
   - `mypy path/to/file.py`
+  - `pylint *.py`
 - Do not run expensive full test suites unless necessary.
 - If tests cannot be run, explain exactly why and what should be run manually.
 
