@@ -1,3 +1,7 @@
+# ВАЖНОЕ
+
+Домен ooni.io, по всей видимости, заблокирован, доступ к нему осуществляется только через VPN
+
 # Список заблокированных сайтов
 
 List of Domains and IP blocked in Russia based on OONI data
