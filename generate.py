@@ -40,9 +40,7 @@ def download_file(url: str, file_path: str, timeout: int = 30) -> bool:
     except requests.exceptions.ConnectionError:
         logger.error("Connection error while downloading %s", url)
     except requests.exceptions.HTTPError as e:
-        logger.error(
-            "HTTP error %s while downloading %s", e.response.status_code, url
-        )
+        logger.error("HTTP error %s while downloading %s", e.response.status_code, url)
     except Exception as e:  # pylint: disable=broad-exception-caught
         logger.error("Unexpected error while downloading %s: %s", url, e)
     return False
