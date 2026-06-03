@@ -6,7 +6,7 @@
   "shell": {
     "init_hook": ["export name=\"$(basename $(pwd))\"", "uv sync"],
     "scripts": {
-      "start": "python3 ./generate.py",
+      "start": "uv run python3 generate.py",
       "uv-sync": "uv sync"
     }
   }
