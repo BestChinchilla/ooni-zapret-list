@@ -2,3 +2,7 @@
 
 # vale styles directory
 styles/**
+
+# pytest
+.pytest_cache/
+__pycache__/

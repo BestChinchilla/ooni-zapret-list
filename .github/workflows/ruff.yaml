@@ -5,4 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/ruff-action@v3
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Run ruff check
+        run: uv run ruff check
+
+      - name: Run ruff format check
+        run: uv run ruff format --check

@@ -22,3 +22,8 @@ dependencies = [
     "tomlkit==0.15.0",
     "urllib3==2.7.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest==9.0.3",
+]
